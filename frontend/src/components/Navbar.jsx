@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets.js";
-import trendora from "../assets/trendora.png";
+import trendora from "../assets/trendora-removebg-preview.png";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useShopStore } from "../store/shop.store.js";
@@ -42,10 +42,10 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-5 font-medium">
       {/* Website logo as a link to home page*/}
-      <Link to="/">
+      <Link className="flex items-center" to="/">
         <img
-          src={assets.logo}
-          className="w-36  transition  ease-in-out duration-50   hover:scale-110 hover:border-red-300 hover:border-b-2"
+          src={trendora}
+          className="w-25 object-contain transition  ease-in-out duration-50   hover:scale-110 hover:border-red-300 hover:border-b-2"
           alt=""
         />
       </Link>

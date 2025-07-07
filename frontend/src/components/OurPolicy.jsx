@@ -6,7 +6,7 @@ const OurPolicy = () => {
       <div>
         <img
           src={assets.exchange_icon}
-          className="w-12 m-auto mb-5"
+          className="w-12 m-auto mb-5 variable"
           alt="Easy Exchange"
         />
         <p className="font-semibold">Easy Exchange Policy</p>
@@ -15,7 +15,7 @@ const OurPolicy = () => {
       <div>
         <img
           src={assets.quality_icon}
-          className="w-12 m-auto mb-5"
+          className="w-12 m-auto mb-5 variable"
           alt="Return Policy"
         />
         <p className="font-semibold">7 Days Return Policy</p>
@@ -24,7 +24,7 @@ const OurPolicy = () => {
       <div>
         <img
           src={assets.support_img}
-          className="w-12 m-auto mb-5"
+          className="w-12 m-auto mb-5 variable"
           alt="Customer Support"
         />
         <p className="font-semibold">Best Customer Support</p>
