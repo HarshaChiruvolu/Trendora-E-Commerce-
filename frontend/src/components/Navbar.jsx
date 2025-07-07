@@ -15,6 +15,7 @@ const Navbar = () => {
   const token = useShopStore((state) => state.token);
   const setToken = useShopStore((state) => state.setToken);
   const setCartItems = useShopStore((state) => state.setCartItems);
+  const setShowSearch = useShopStore((state) => state.setShowSearch);
   const navigate = useNavigate();
 
   // Reactively compute the count
