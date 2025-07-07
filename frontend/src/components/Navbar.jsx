@@ -16,6 +16,7 @@ const Navbar = () => {
   const setToken = useShopStore((state) => state.setToken);
   const setCartItems = useShopStore((state) => state.setCartItems);
   const setShowSearch = useShopStore((state) => state.setShowSearch);
+  const showSearch = useShopStore((state) => state.showSearch);
   const navigate = useNavigate();
 
   // Reactively compute the count
@@ -76,7 +77,7 @@ const Navbar = () => {
       <div className="flex items-center gap-6">
         {/* Search icon */}
         <img
-          onClick={() => setShowSearch(true)}
+          onClick={() => setShowSearch(!showSearch)}
           // This will set the showSearch state to true when the search icon is clicked
           src={assets.search_icon}
           className="w-5 cursor-pointer variable"
