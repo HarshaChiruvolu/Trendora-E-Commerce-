@@ -72,10 +72,21 @@ const Navbar = () => {
           <p className="variable">CONTACT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
+
+        {/* //LINK TO ADMIN PANEL */}
+        <a
+          href="https://trendora-admin.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-1 rounded-full bg-black text-white text-xs transition-transform ease-in-out duration-200 hover:scale-110 hover:bg-gray-500"
+        >
+          Admin panel
+        </a>
       </ul>
 
       <div className="flex items-center gap-6">
         {/* Search icon */}
+
         <img
           onClick={() => setShowSearch(!showSearch)}
           // This will set the showSearch state to true when the search icon is clicked
